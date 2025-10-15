@@ -20,6 +20,15 @@ AI and simulation software stack, baseline environments, and approaches for runn
   * [ORBIT](#orbit) -- Aris
 
 ## LLM  
+Frontier supports most LLM training and inference software libraries, and the deployment can be via either native installation (e.g., pip install) or containter (i.e., Apptainer). E.g., for rocm/6.4.2, PyTorch can be installed 
+```bash
+pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/rocm6.4
+```
+or 
+```bash
+apptainer build pytorch_rocm642.sif docker://docker.io/rocm/pytorch:rocm6.4.2_ubuntu24.04_py3.12_pytorch_release_2.6.0
+```
+
 ### FlashAttention 
 #### Installation 
 FA2 is supported on Frontier and the upstream [repo](https://github.com/Dao-AILab/flash-attention) can be pip installed
