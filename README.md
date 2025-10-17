@@ -12,14 +12,18 @@ AI and simulation software stack, baseline environments, and approaches for runn
   * [ViT](#vit) -- Aris
   * [GNN](#gnn) -- Max
 - Simulation Stack
-  * [VASP](#vasp) -- Junqi 
-  * [LAMMPS](#lammps) -- Junqi    
+  * [VASP](#vasp) -- Max 
+  * [LSMS](#lsms) -- Junqi
+  * [CFD](#cfd) -- Ramki 
 - Baseline Environment
-  * [HydraGNN](#hydragnn) -- Max 
+  * [HydraGNN](#hydragnn) -- Max
+  * [LORACX](#loracx) -- Ramki 
   * [FORGE](#forge) -- Junqi
   * [ORBIT](#orbit) -- Aris
+  * [Matey](#matey) -- Junqi
 
 ## LLM  
+### PyTorch
 Frontier supports most LLM training and inference software libraries, and the deployment can be via either native installation (e.g., pip install) or containter (i.e., Apptainer). E.g., for rocm/6.4.2, PyTorch can be installed 
 ```bash
 pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/rocm6.4
