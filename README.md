@@ -19,7 +19,6 @@ AI and simulation software stack, baseline environments, and approaches for runn
   * [HydraGNN](#hydragnn) -- Max
   * [LORACX](#loracx) -- Ramki 
   * [LLM Pre-Training -- FORGE](#forge) -- Junqi
-  * [ORBIT](#orbit) -- Aris
   * [Matey](#matey) -- Junqi
 
 ## LLM  
