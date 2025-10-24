@@ -13,10 +13,10 @@ AI and simulation software stack, baseline environments, and approaches for runn
   * [CFD](#cfd) -- Ramki ? 
 - Baseline Environment
   * [HydraGNN](#hydragnn) -- Max
+  * [Matey](#matey) -- Junqi
   * [LORACX](#loracx) -- Ramki 
   * [LLM Pre-Training -- FORGE](#forge) -- Junqi
   * [LLM Fine-Tuning -- TorchTitan](#torchtitan) -- Emin 
-  * [Matey](#matey) -- Junqi
 
 ## LLM  
 We support LLM pre-training and fine-tuning with frameworks such as DeepSpeed, Megatron, TorchTitan, TorchTune, etc, as well as model serving with vLLM, ollama, etc. 
@@ -70,7 +70,9 @@ PyTorch Flex attention
 ## Baseline Environment
 
 ### HydraGNN
-An [installation script](HydraGNN/hydragnn_installation_bash_script_frontier.sh) for setup HydraGNN on Frontier is provided. 
+An [installation script](HydraGNN/hydragnn_installation_bash_script_frontier.sh) for setup HydraGNN environment on Frontier is provided. 
+### MATEY
+An [installation script](MATEY/create_matey_env_frontier.sh) for setup MATEY environment on Frontier is provided. 
 
 ### FORGE
 #### Step 1: Initial Environment Setup
