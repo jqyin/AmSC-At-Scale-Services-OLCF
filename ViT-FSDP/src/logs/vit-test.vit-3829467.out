@@ -1,0 +1,349 @@
+
+Lmod is automatically replacing "gcc/12.2.0" with "gcc-native/14.2".
+
+
+The following have been reloaded with a version change:
+  1) cray-libsci/23.09.1.1 => cray-libsci/24.11.0
+  2) cray-mpich/8.1.27 => cray-mpich/8.1.31
+
+
+Lmod is automatically replacing "gcc-native/14.2" with "gcc/12.2.0".
+
+
+The following have been reloaded with a version change:
+  1) cray-libsci/24.11.0 => cray-libsci/23.09.1.1
+  2) cray-mpich/8.1.31 => cray-mpich/8.1.27
+
+python -u main_training.py --model vitsmart --model_size base --strategy FULL_SHARD --scaling_group_size 0 --use_ddp --bs 32 --image_size 224
+/lustre/orion/stf218/scratch/atsaris/code/tmp_generic/transformer_framework/model_checkpointing/checkpoint_handler.py:15: DeprecationWarning: `torch.distributed._shard.checkpoint` will be deprecated, use `torch.distributed.checkpoint` instead
+  from torch.distributed._shard.checkpoint import (
+/lustre/orion/stf218/scratch/atsaris/code/tmp_generic/transformer_framework/model_checkpointing/checkpoint_handler.py:15: DeprecationWarning: `torch.distributed._shard.checkpoint` will be deprecated, use `torch.distributed.checkpoint` instead
+  from torch.distributed._shard.checkpoint import (
+/lustre/orion/stf218/scratch/atsaris/code/tmp_generic/transformer_framework/model_checkpointing/checkpoint_handler.py:15: DeprecationWarning: `torch.distributed._shard.checkpoint` will be deprecated, use `torch.distributed.checkpoint` instead
+  from torch.distributed._shard.checkpoint import (
+/lustre/orion/stf218/scratch/atsaris/code/tmp_generic/transformer_framework/model_checkpointing/checkpoint_handler.py:15: DeprecationWarning: `torch.distributed._shard.checkpoint` will be deprecated, use `torch.distributed.checkpoint` instead
+  from torch.distributed._shard.checkpoint import (
+/lustre/orion/stf218/scratch/atsaris/code/tmp_generic/transformer_framework/model_checkpointing/checkpoint_handler.py:15: DeprecationWarning: `torch.distributed._shard.checkpoint` will be deprecated, use `torch.distributed.checkpoint` instead
+  from torch.distributed._shard.checkpoint import (
+/lustre/orion/stf218/scratch/atsaris/code/tmp_generic/transformer_framework/model_checkpointing/checkpoint_handler.py:15: DeprecationWarning: `torch.distributed._shard.checkpoint` will be deprecated, use `torch.distributed.checkpoint` instead
+  from torch.distributed._shard.checkpoint import (
+/lustre/orion/stf218/scratch/atsaris/code/tmp_generic/transformer_framework/model_checkpointing/checkpoint_handler.py:15: DeprecationWarning: `torch.distributed._shard.checkpoint` will be deprecated, use `torch.distributed.checkpoint` instead
+  from torch.distributed._shard.checkpoint import (
+/lustre/orion/stf218/scratch/atsaris/code/tmp_generic/transformer_framework/model_checkpointing/checkpoint_handler.py:15: DeprecationWarning: `torch.distributed._shard.checkpoint` will be deprecated, use `torch.distributed.checkpoint` instead
+  from torch.distributed._shard.checkpoint import (
+/lustre/orion/stf218/scratch/atsaris/code/tmp_generic/transformer_framework/environment/bfloat_checker.py:14: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging
+/lustre/orion/stf218/scratch/atsaris/code/tmp_generic/transformer_framework/environment/bfloat_checker.py:14: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging
+/lustre/orion/stf218/scratch/atsaris/code/tmp_generic/transformer_framework/environment/bfloat_checker.py:14: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging
+/lustre/orion/stf218/scratch/atsaris/code/tmp_generic/transformer_framework/environment/bfloat_checker.py:14: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging
+/lustre/orion/stf218/scratch/atsaris/code/tmp_generic/transformer_framework/environment/bfloat_checker.py:14: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging
+/lustre/orion/stf218/scratch/atsaris/code/tmp_generic/transformer_framework/environment/bfloat_checker.py:14: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging
+/lustre/orion/stf218/scratch/atsaris/code/tmp_generic/transformer_framework/environment/bfloat_checker.py:14: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging
+/lustre/orion/stf218/scratch/atsaris/code/tmp_generic/transformer_framework/environment/bfloat_checker.py:14: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging
+******* loading model args.model='vitsmart'
+******* loading model args.model='vitsmart'
+******* loading model args.model='vitsmart'
+******* loading model args.model='vitsmart'
+******* loading model args.model='vitsmart'
+******* loading model args.model='vitsmart'
+******* loading model args.model='vitsmart'
+******* loading model args.model='vitsmart'
+--> World Size = 8
+
+[W1022 13:28:44.831110379 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [frontier07394.frontier.olcf.ornl.gov]:29500 (errno: 97 - Address family not supported by protocol).
+[W1022 13:28:44.831079228 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [frontier07394.frontier.olcf.ornl.gov]:29500 (errno: 97 - Address family not supported by protocol).
+[W1022 13:28:44.831094829 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [frontier07394.frontier.olcf.ornl.gov]:29500 (errno: 97 - Address family not supported by protocol).
+[W1022 13:28:44.831119787 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [frontier07394.frontier.olcf.ornl.gov]:29500 (errno: 97 - Address family not supported by protocol).
+[W1022 13:28:44.831976795 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [frontier07394.frontier.olcf.ornl.gov]:29500 (errno: 97 - Address family not supported by protocol).
+[W1022 13:28:44.834929038 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [frontier07394.frontier.olcf.ornl.gov]:29500 (errno: 97 - Address family not supported by protocol).
+[W1022 13:28:44.837614464 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [frontier07394.frontier.olcf.ornl.gov]:29500 (errno: 97 - Address family not supported by protocol).
+--> Device_count = 1
+--> running with these defaults train_config(seed=2023, verbose=True, total_steps_to_run=None, warmup_steps=5, use_orig_params=True, limit_all_gathers=True, use_ddp=True, ddp_bucket_size=25, ddp_use_gradient_view=False, hf_t5_checkpointing=False, print_memory_summary=False, print_training_loss_data=False, num_epochs=3, model_weights_bf16=False, use_mixed_precision=True, use_low_precision_gradient_policy=False, use_tf32=True, optimizer='AdamW', ap_use_kahan_summation=False, sharding_strategy=<ShardingStrategy.FULL_SHARD: 1>, print_sharding_plan=False, run_profiler=False, profile_folder='tp_fsdp/profile_tracing', log_every=1, num_workers_dataloader=2, batch_size_training=32, fsdp_activation_checkpointing=True, use_fused_attention=True, use_parallel_attention=False, run_validation=False, memory_report=True, nccl_debug_handler=True, distributed_debug=True, use_non_recursive_wrapping=False, use_multi_query_attention=True, use_torch_compile=False, flop_counter=True, use_deferred_init=False, use_tp=False, image_size=224, use_synthetic_data=True, use_pokemon_dataset=False, use_beans_dataset=False, save_model_checkpoint=False, load_model_checkpoint=False, checkpoint_max_save_count=2, save_optimizer=False, load_optimizer=False, optimizer_checkpoint_file='Adam-vit--1.pt', checkpoint_model_filename='vit--1.pt')
+[W1022 13:28:49.676959580 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [frontier07394.frontier.olcf.ornl.gov]:29500 (errno: 97 - Address family not supported by protocol).
+clearing gpu cache for all ranks
+--> running with torch dist debug set to detail
+--> total memory per gpu (GB) = 63.9844
+wrapping policy is functools.partial(<function transformer_auto_wrap_policy at 0x7ffda83e3550>, transformer_layer_cls={<class 'models.smart_vit.vit_main.ResPostBlock'>})
+
+--> Prepping base model ...
+
+stats is ready....? _stats=None, local_rank=0, rank=0
+***** building the model  ******
+using deferred? False
+**** Use MQA = True
+local_cfg.num_categories=1000
+{'patch_size': 16, 'embed_dim': 768, 'depth': 12, 'num_heads': 12, 'num_classes': 1000, 'image_size': 224, 'use_fused_attention': True, 'use_upper_fusion': True, 'use_multi_query_attention': False}
+Num classes = 1000
+Building with Sequential Attention
+Model has 12 layers
+
+Classifer head set for num_classes=1000
+init mode = mode=''
+vit, GPU peak memory allocation: 0.0GB, GPU peak memory reserved: 0.0GB, GPU peak memory active: 0.0GB
+***** building the model  ******
+**** Use MQA = True
+local_cfg.num_categories=1000
+{'patch_size': 16, 'embed_dim': 768, 'depth': 12, 'num_heads': 12, 'num_classes': 1000, 'image_size': 224, 'use_fused_attention': True, 'use_upper_fusion': True, 'use_multi_query_attention': False}
+Num classes = 1000
+Building with Sequential Attention
+Classifer head set for num_classes=1000
+***** building the model  ******
+**** Use MQA = True
+local_cfg.num_categories=1000
+{'patch_size': 16, 'embed_dim': 768, 'depth': 12, 'num_heads': 12, 'num_classes': 1000, 'image_size': 224, 'use_fused_attention': True, 'use_upper_fusion': True, 'use_multi_query_attention': False}
+Num classes = 1000
+Building with Sequential Attention
+--> base built.
+built model with 87.02884M params
+bf16 check passed
+
+--> Running with mixed precision MixedPrecision(param_dtype=torch.bfloat16, reduce_dtype=torch.bfloat16, buffer_dtype=torch.bfloat16, keep_low_precision_grads=False, cast_forward_inputs=False, cast_root_forward_inputs=True, _module_classes_to_ignore=(<class 'torch.nn.modules.batchnorm._BatchNorm'>,)) policy
+backward prefetch set to BackwardPrefetch.BACKWARD_PRE
+sharding set to ShardingStrategy.FULL_SHARD
+--> Batch Size = 32
+Classifer head set for num_classes=1000
+***** building the model  ******
+**** Use MQA = True
+local_cfg.num_categories=1000
+{'patch_size': 16, 'embed_dim': 768, 'depth': 12, 'num_heads': 12, 'num_classes': 1000, 'image_size': 224, 'use_fused_attention': True, 'use_upper_fusion': True, 'use_multi_query_attention': False}
+Num classes = 1000
+Building with Sequential Attention
+Classifer head set for num_classes=1000
+***** building the model  ******
+**** Use MQA = True
+local_cfg.num_categories=1000
+{'patch_size': 16, 'embed_dim': 768, 'depth': 12, 'num_heads': 12, 'num_classes': 1000, 'image_size': 224, 'use_fused_attention': True, 'use_upper_fusion': True, 'use_multi_query_attention': False}
+Num classes = 1000
+Building with Sequential Attention
+***** building the model  ******
+**** Use MQA = True
+local_cfg.num_categories=1000
+{'patch_size': 16, 'embed_dim': 768, 'depth': 12, 'num_heads': 12, 'num_classes': 1000, 'image_size': 224, 'use_fused_attention': True, 'use_upper_fusion': True, 'use_multi_query_attention': False}
+Num classes = 1000
+Building with Sequential Attention
+***** building the model  ******
+**** Use MQA = True
+local_cfg.num_categories=1000
+{'patch_size': 16, 'embed_dim': 768, 'depth': 12, 'num_heads': 12, 'num_classes': 1000, 'image_size': 224, 'use_fused_attention': True, 'use_upper_fusion': True, 'use_multi_query_attention': False}
+Num classes = 1000
+Building with Sequential Attention
+***** building the model  ******
+**** Use MQA = True
+local_cfg.num_categories=1000
+{'patch_size': 16, 'embed_dim': 768, 'depth': 12, 'num_heads': 12, 'num_classes': 1000, 'image_size': 224, 'use_fused_attention': True, 'use_upper_fusion': True, 'use_multi_query_attention': False}
+Num classes = 1000
+Building with Sequential Attention
+Classifer head set for num_classes=1000
+Classifer head set for num_classes=1000
+Classifer head set for num_classes=1000
+Classifer head set for num_classes=1000
+[rank2]:[W1022 13:29:00.166489644 Utils.hpp:112] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[rank4]:[W1022 13:29:00.166476348 Utils.hpp:112] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[rank5]:[W1022 13:29:00.166493040 Utils.hpp:112] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[rank7]:[W1022 13:29:00.166487439 Utils.hpp:112] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[rank0]:[W1022 13:29:00.166494002 Utils.hpp:112] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[rank1]:[W1022 13:29:00.166497068 Utils.hpp:112] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[rank3]:[W1022 13:29:00.166490405 Utils.hpp:112] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[rank6]:[W1022 13:29:00.166500244 Utils.hpp:112] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+vit, GPU peak memory allocation: 0.0GB, GPU peak memory reserved: 1.0GB, GPU peak memory active: 0.0GB
+Activation Checkpointing with Sequential - ResPostBlock
+Activation Checkpointing with Sequential - ResPostBlock
+Activation Checkpointing with Sequential - ResPostBlock
+Activation Checkpointing with Sequential - ResPostBlock
+Activation Checkpointing with Sequential - ResPostBlock
+Activation Checkpointing with Sequential - ResPostBlock
+Activation Checkpointing with Sequential - ResPostBlock
+Activation Checkpointing with Sequential - ResPostBlock
+--> FSDP activation checkpointing in use
+local rank 0 init time = 7.5929198270023335
+Data sample size: 5009
+Data sample size: 5009
+Data sample size: 5009
+Data sample size: 5009
+Data sample size: 5009
+Data sample size: 5009
+Data sample size: 5009
+Data sample size: 5009
+memory stats reset, ready to track
+Running with AdamW optimizer, with fusion set to True
+Epoch: 0 starting...
+step: 1: time taken for the last 1 steps is 1.4760, including opt 1.490341, loss is 7.046604156494141
+step: 2: time taken for the last 1 steps is 0.0538, including opt 0.054930, loss is 7.031983375549316
+Module                                                         FLOP    % Total
+--------------------------------------------------------  ---------  ---------
+Global                                                    4534.092B    100.00%
+ - aten.mm                                                2175.162B     47.97%
+ - aten.addmm                                             2152.916B     47.48%
+ - aten._scaled_dot_product_efficient_attention             91.562B      2.02%
+ - aten._scaled_dot_product_efficient_attention_backward   114.452B      2.52%
+TFlops of the model is 4.5341
+step: 3: time taken for the last 1 steps is 0.1259, including opt 0.126840, loss is 6.992795467376709
+step: 4: time taken for the last 1 steps is 0.0522, including opt 0.053464, loss is 6.854558944702148
+step: 5: time taken for the last 1 steps is 0.0517, including opt 0.053043, loss is 7.095932960510254
+step: 6: time taken for the last 1 steps is 0.0517, including opt 0.052871, loss is 6.952376842498779
+step: 7: time taken for the last 1 steps is 0.0519, including opt 0.053097, loss is 7.022759437561035
+step: 8: time taken for the last 1 steps is 0.0516, including opt 0.052871, loss is 6.914446830749512
+step: 9: time taken for the last 1 steps is 0.0518, including opt 0.053090, loss is 7.034005165100098
+step: 10: time taken for the last 1 steps is 0.0516, including opt 0.052850, loss is 7.203054428100586
+step: 11: time taken for the last 1 steps is 0.0516, including opt 0.052808, loss is 7.020686149597168
+step: 12: time taken for the last 1 steps is 0.0517, including opt 0.052778, loss is 7.1081223487854
+step: 13: time taken for the last 1 steps is 0.0517, including opt 0.052834, loss is 7.108138561248779
+step: 14: time taken for the last 1 steps is 0.0516, including opt 0.052764, loss is 7.024978160858154
+step: 15: time taken for the last 1 steps is 0.0517, including opt 0.052898, loss is 7.2488908767700195
+step: 16: time taken for the last 1 steps is 0.0514, including opt 0.052771, loss is 6.830748081207275
+step: 17: time taken for the last 1 steps is 0.0516, including opt 0.052883, loss is 7.045319557189941
+step: 18: time taken for the last 1 steps is 0.0516, including opt 0.052718, loss is 6.962696552276611
+step: 19: time taken for the last 1 steps is 0.0516, including opt 0.052896, loss is 7.003589153289795
+step: 20: time taken for the last 1 steps is 0.0515, including opt 0.052652, loss is 6.968067169189453
+step: 21: time taken for the last 1 steps is 0.0517, including opt 0.052811, loss is 7.258551597595215
+step: 22: time taken for the last 1 steps is 0.0514, including opt 0.052631, loss is 7.110461235046387
+step: 23: time taken for the last 1 steps is 0.0516, including opt 0.052789, loss is 7.152776718139648
+step: 24: time taken for the last 1 steps is 0.0515, including opt 0.052690, loss is 7.18503475189209
+step: 25: time taken for the last 1 steps is 0.0516, including opt 0.052764, loss is 6.996886730194092
+step: 26: time taken for the last 1 steps is 0.0515, including opt 0.052797, loss is 7.030245780944824
+step: 27: time taken for the last 1 steps is 0.0515, including opt 0.052700, loss is 7.019161701202393
+step: 28: time taken for the last 1 steps is 0.0514, including opt 0.052675, loss is 7.09805965423584
+step: 29: time taken for the last 1 steps is 0.0514, including opt 0.052619, loss is 7.051634788513184
+step: 30: time taken for the last 1 steps is 0.0513, including opt 0.052599, loss is 6.995004177093506
+EASY_LOG 5009 9.837354183197021 780.697721864894
+Epoch: 1 starting...
+step: 1: time taken for the last 1 steps is 0.0593, including opt 0.060489, loss is 7.21319580078125
+step: 2: time taken for the last 1 steps is 0.0538, including opt 0.054838, loss is 7.1842145919799805
+Module                                                         FLOP    % Total
+--------------------------------------------------------  ---------  ---------
+Global                                                    4534.092B    100.00%
+ - aten.mm                                                2175.162B     47.97%
+ - aten.addmm                                             2152.916B     47.48%
+ - aten._scaled_dot_product_efficient_attention             91.562B      2.02%
+ - aten._scaled_dot_product_efficient_attention_backward   114.452B      2.52%
+TFlops of the model is 4.5341
+step: 3: time taken for the last 1 steps is 0.1110, including opt 0.111978, loss is 7.264649391174316
+step: 4: time taken for the last 1 steps is 0.0522, including opt 0.053338, loss is 7.083281993865967
+step: 5: time taken for the last 1 steps is 0.0517, including opt 0.052984, loss is 7.069620132446289
+step: 6: time taken for the last 1 steps is 0.0517, including opt 0.052852, loss is 6.9285054206848145
+step: 7: time taken for the last 1 steps is 0.0520, including opt 0.053303, loss is 6.9639410972595215
+step: 8: time taken for the last 1 steps is 0.0516, including opt 0.052837, loss is 6.938784599304199
+step: 9: time taken for the last 1 steps is 0.0517, including opt 0.052967, loss is 7.129700183868408
+step: 10: time taken for the last 1 steps is 0.0517, including opt 0.052832, loss is 7.184734344482422
+step: 11: time taken for the last 1 steps is 0.0519, including opt 0.052965, loss is 7.104276657104492
+step: 12: time taken for the last 1 steps is 0.0515, including opt 0.052749, loss is 6.998373508453369
+step: 13: time taken for the last 1 steps is 0.0518, including opt 0.053034, loss is 7.038560390472412
+step: 14: time taken for the last 1 steps is 0.0515, including opt 0.052731, loss is 7.016904354095459
+step: 15: time taken for the last 1 steps is 0.0519, including opt 0.053010, loss is 7.033066749572754
+step: 16: time taken for the last 1 steps is 0.1455, including opt 0.146631, loss is 7.072938919067383
+step: 17: time taken for the last 1 steps is 0.0515, including opt 0.052579, loss is 7.147715091705322
+step: 18: time taken for the last 1 steps is 0.0517, including opt 0.052903, loss is 6.9644341468811035
+step: 19: time taken for the last 1 steps is 0.0517, including opt 0.052952, loss is 7.105376720428467
+step: 20: time taken for the last 1 steps is 0.0516, including opt 0.052847, loss is 6.954808235168457
+step: 21: time taken for the last 1 steps is 0.0516, including opt 0.052854, loss is 7.110106468200684
+step: 22: time taken for the last 1 steps is 0.0515, including opt 0.052755, loss is 7.169142246246338
+step: 23: time taken for the last 1 steps is 0.0517, including opt 0.052866, loss is 7.125560760498047
+step: 24: time taken for the last 1 steps is 0.0514, including opt 0.052492, loss is 7.216613292694092
+step: 25: time taken for the last 1 steps is 0.0518, including opt 0.052967, loss is 7.149819374084473
+step: 26: time taken for the last 1 steps is 0.0515, including opt 0.052708, loss is 7.051941871643066
+step: 27: time taken for the last 1 steps is 0.0515, including opt 0.052751, loss is 7.075794219970703
+step: 28: time taken for the last 1 steps is 0.0515, including opt 0.052685, loss is 6.953519821166992
+step: 29: time taken for the last 1 steps is 0.0517, including opt 0.052967, loss is 7.1259331703186035
+step: 30: time taken for the last 1 steps is 0.0516, including opt 0.052820, loss is 7.029042720794678
+EASY_LOG 5009 8.356720685958862 919.0207844213458
+Epoch: 2 starting...
+step: 1: time taken for the last 1 steps is 0.0578, including opt 0.059112, loss is 7.012914180755615
+step: 2: time taken for the last 1 steps is 0.0907, including opt 0.092738, loss is 7.330838680267334
+Module                                                         FLOP    % Total
+--------------------------------------------------------  ---------  ---------
+Global                                                    4534.092B    100.00%
+ - aten.mm                                                2175.162B     47.97%
+ - aten.addmm                                             2152.916B     47.48%
+ - aten._scaled_dot_product_efficient_attention             91.562B      2.02%
+ - aten._scaled_dot_product_efficient_attention_backward   114.452B      2.52%
+TFlops of the model is 4.5341
+step: 3: time taken for the last 1 steps is 0.1459, including opt 0.147114, loss is 7.045960426330566
+step: 4: time taken for the last 1 steps is 0.0584, including opt 0.059726, loss is 6.990854263305664
+step: 5: time taken for the last 1 steps is 0.0520, including opt 0.053076, loss is 7.05451774597168
+step: 6: time taken for the last 1 steps is 0.0517, including opt 0.052773, loss is 7.030049800872803
+step: 7: time taken for the last 1 steps is 0.0520, including opt 0.053012, loss is 7.057822227478027
+step: 8: time taken for the last 1 steps is 0.0516, including opt 0.052726, loss is 7.134341716766357
+step: 9: time taken for the last 1 steps is 0.0518, including opt 0.052949, loss is 7.126166820526123
+step: 10: time taken for the last 1 steps is 0.0516, including opt 0.052729, loss is 7.154062747955322
+step: 11: time taken for the last 1 steps is 0.0518, including opt 0.052957, loss is 7.222838401794434
+step: 12: time taken for the last 1 steps is 0.0517, including opt 0.052933, loss is 6.973267555236816
+step: 13: time taken for the last 1 steps is 0.0518, including opt 0.053000, loss is 6.943285942077637
+step: 14: time taken for the last 1 steps is 0.0516, including opt 0.052930, loss is 7.143706321716309
+step: 15: time taken for the last 1 steps is 0.0517, including opt 0.052890, loss is 7.089838981628418
+step: 16: time taken for the last 1 steps is 0.0516, including opt 0.052843, loss is 7.026650905609131
+step: 17: time taken for the last 1 steps is 0.0517, including opt 0.052899, loss is 7.18781852722168
+step: 18: time taken for the last 1 steps is 0.0515, including opt 0.052775, loss is 7.0134453773498535
+step: 19: time taken for the last 1 steps is 0.0518, including opt 0.052980, loss is 7.0043792724609375
+step: 20: time taken for the last 1 steps is 0.0514, including opt 0.052698, loss is 6.9183526039123535
+step: 21: time taken for the last 1 steps is 0.0519, including opt 0.053032, loss is 7.0773115158081055
+step: 22: time taken for the last 1 steps is 0.0516, including opt 0.052933, loss is 7.225920677185059
+step: 23: time taken for the last 1 steps is 0.0516, including opt 0.052884, loss is 7.036529541015625
+step: 24: time taken for the last 1 steps is 0.0517, including opt 0.052877, loss is 7.118722915649414
+step: 25: time taken for the last 1 steps is 0.0516, including opt 0.052868, loss is 7.067312717437744
+step: 26: time taken for the last 1 steps is 0.0519, including opt 0.053086, loss is 7.090012073516846
+step: 27: time taken for the last 1 steps is 0.0516, including opt 0.052934, loss is 7.02960205078125
+step: 28: time taken for the last 1 steps is 0.0515, including opt 0.052703, loss is 7.003106117248535
+step: 29: time taken for the last 1 steps is 0.0515, including opt 0.052668, loss is 7.176695346832275
+** exit loop - rank 5 reporting....
+** exit loop - rank 1 reporting....
+/lustre/orion/world-shared/stf218/atsaris/DEEPCAM_2022/new_env_sep2025_2/env_rocm/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/lustre/orion/world-shared/stf218/atsaris/DEEPCAM_2022/new_env_sep2025_2/env_rocm/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+** exit loop - rank 6 reporting....
+/lustre/orion/world-shared/stf218/atsaris/DEEPCAM_2022/new_env_sep2025_2/env_rocm/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+** exit loop - rank 3 reporting....
+** exit loop - rank 4 reporting....
+/lustre/orion/world-shared/stf218/atsaris/DEEPCAM_2022/new_env_sep2025_2/env_rocm/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+** exit loop - rank 2 reporting....
+/lustre/orion/world-shared/stf218/atsaris/DEEPCAM_2022/new_env_sep2025_2/env_rocm/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/lustre/orion/world-shared/stf218/atsaris/DEEPCAM_2022/new_env_sep2025_2/env_rocm/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+** exit loop - rank 7 reporting....
+/lustre/orion/world-shared/stf218/atsaris/DEEPCAM_2022/new_env_sep2025_2/env_rocm/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+step: 30: time taken for the last 1 steps is 0.0516, including opt 0.052821, loss is 7.038802623748779
+EASY_LOG 5009 7.616558790206909 1008.3293796503824
+** exit loop - rank 0 reporting....
+
+--> cuda max reserved memory = 2.4062
+--> max reserved percentage = 3.76 %
+
+--> cuda max memory allocated = 2.214
+--> max allocated percentage = 3.46 %
+
+--> peak active memory = 2.214
+--> peak active memory 3.46 %
+
+cudaMalloc retries = 0
+cuda OOM = 0
+
+
+Dist Training Framework used = DDP
+
+DDP settings:  
+ddp_bucket_size=25,
+ddp_use_gradient_view=False
+
+This was run with TensorParallel? = False
+
+Run with Parallel Attention? False
+Run with MQA? True
+
+Batch size used = 32
+
+
+--> Model Size =  87.02884 M Params
+
+/lustre/orion/world-shared/stf218/atsaris/DEEPCAM_2022/new_env_sep2025_2/env_rocm/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once

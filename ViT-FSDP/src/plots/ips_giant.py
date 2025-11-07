@@ -1,0 +1,44 @@
+import ast
+import matplotlib.pyplot as plt
+import statistics
+import json
+import numpy as np
+
+#ddp = []
+#NO_SHARD = []
+#HYBRID = []
+#HYBRID_2GPUs = []
+#ddp_ideal = []
+
+# Real
+
+ddp = [89,	179,	336,	690,	1365,	2779]
+NO_SHARD = [187,	373,	745,	1435,	2807,	5802]
+HYBRID = [189,	383,	763,	1528,	3056,	6171]
+HYBRID_2GPUs = [188,	377,	753,	1454,	2871,	5611]
+
+# Ideal
+ddp_ideal = [89*1, 89*2, 89*4, 89*8, 89*16, 89*32]
+
+x_axis = [1, 2, 4, 8, 16, 32]
+
+fig, axarr = plt.subplots(1,1)
+font = {'family': 'sans-serif',
+        'color':  'black',
+        'weight': 'normal',
+        }
+
+axarr.plot(x_axis, ddp, '-o', color='black', label='ddp')
+axarr.plot(x_axis, NO_SHARD, '-o', color='g', label='NO_SHARD')
+axarr.plot(x_axis, HYBRID, '-o', color='r', label='HYBRID_1GPU')
+axarr.plot(x_axis, HYBRID_2GPUs, '-o', color='b', label='HYBRID_2GPUs')
+axarr.plot(x_axis, ddp_ideal, '--o', color='black', label='ddp Ideal')
+
+axarr.set_ylabel('Avg. Throughput (img/sec)',fontdict=font)
+axarr.set_xlabel('Number of Nodes',fontdict=font)
+axarr.set_title('Weak Scaling of Giant model (914M) on Synthetic Data', fontdict=font)
+axarr.legend()
+axarr.grid()
+axarr.legend(prop={'size': 12})
+
+plt.show()

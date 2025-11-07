@@ -1,6 +1,6 @@
 # ViT -- FSDP
 
-This documentation shows has to run ViTs with FSDP modes on Frontier. More details can be found here [^1].
+This documentation shows how to run efficiently Vision Transformer models, with up to 15B parameter on the Frontier supercomputer, using only Pytorch.
 
 ## FSDP Modes and Model Architecture Variants
 
@@ -26,6 +26,15 @@ The FSDP mode equivalent to DDP is called NO SHARD, where parameters, gradients,
 We define a strategy named HYBRID 2GPUs which applies HYBRID SHARD on a single Frontier node (i.e., 8 GPUs total) such that only the two closest GPUs perform model sharding. For a single node with 8 GPUs, such HYBRID 2GPUs strategy implies on 4 sharding-groups, each with 2 GPUs. Between the two closest GPUs, all-gather and reduce-scatter communication would occur, while the model will be replicated four times with all-reduce communication enabled for sharing parameters.
 
 Analogously, we define a HYBRID 8GPUs strategy that allows model sharding across all 8 GPUs of a single node. For example, using HYBRID 8GPUs on two nodes allows forming 2 sharding-groups, with data-parallel performed across nodes. This mode is ideal for medium size models that can fit on a single node, reducing the communication overhead by performing only all-reduce across nodes.
+
+## Scripts
+* `scripts/sub_base.sh`, `scripts/sub_huge.sh`, `scripts/sub_1B.sh`, `scripts/sub_15B.sh` show an example on how to run in fully sharded mode the ViT architecture.
+* `scripts/sub_15B_HYBRID_4G_4N.sh` shows how to run in the 15B ViT architecture on HYBRID mode, using 4 GPUs for fully sharded the model, and perform DDP between groups.
+
+## Simple Parse Logs
+* In order to get the throughput do `cat log | grep EASY`
+* In order to get the memory do `cat log | grep "max reserved percentage"`
+* In order to get the parameters for the model do `cat log | grep "built model"`
 
 ## Performance Evaluations on Frontier
 
@@ -67,9 +76,10 @@ Figure 3 shows the measured image-per-second performance for different FSDP shar
 
 ### Observations
 
-The BACKWARD PRE and the limit all gathers seem to provide the best performance in terms of parameter prefetching. For models that fit on a single GPU, the best data parallel strategy seems to be the HYBRID 1GPU, where the cost of synchronization even between the closest GPUs seems to be more expensive than the saves in the compute. It is worth noting that we did not try torch.compile, which can offer additional optimizations for overlapping compute and communication costs. For models that can fit on two GPUs, model sharding within the node and data parallel all reduce across nodes seems to be the best choice. Finally, for models that can fit only on half of the Frontier node, the SHARD GRAD OP seems to scale better than any other FSDP mode. For a model detailed discussion see [^1]
+The BACKWARD PRE and the limit all gathers seem to provide the best performance in terms of parameter prefetching. For models that fit on a single GPU, the best data parallel strategy seems to be the HYBRID 1GPU, where the cost of synchronization even between the closest GPUs seems to be more expensive than the saves in the compute. It is worth noting that we did not try torch.compile, which can offer additional optimizations for overlapping compute and communication costs. For models that can fit on two GPUs, model sharding within the node and data parallel all reduce across nodes seems to be the best choice. Finally, for models that can fit only on half of the Frontier node, the SHARD GRAD OP seems to scale better than any other FSDP mode. For a model detailed discussion see [^1], the code is adjust from this repo[^4]
 
 ## References
 [^1]: Tsaris, A., Dias, P. A., Potnis, A., Yin, J., Wang, F., & Lunga, D. (2024, May). Pretraining Billion-Scale Geospatial Foundational Models on Frontier. In 2024 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW) (pp. 1036-1046). IEEE Computer Society.
 [^2]: Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvan Gelly, et al. An image is worth 16x16 words: Transformers for image recognition at scale. In International Conference on Learning Representations, 2020.
 [^3]: Xiaohua Zhai, Alexander Kolesnikov, Neil Houlsby, and Lucas Beyer. Scaling vision transformers. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 12104–12113, 2022.
+[^4]: [repo](https://github.com/lessw2020/transformer_framework)
