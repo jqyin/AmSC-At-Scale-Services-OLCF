@@ -20,6 +20,34 @@ AI and simulation software stack, baseline environments, and approaches for runn
 
 ## LLM  
 We support LLM pre-training and fine-tuning with frameworks such as DeepSpeed, Megatron, TorchTitan, TorchTune, etc, as well as model serving with vLLM, ollama, etc. 
+### vLLM
+We recomend to use Apptainer to run vLLM on Frontier. The images are available here: https://hub.docker.com/r/rocm/vllm/tags. 
+
+To pull an image
+```bash
+apptainer build ./vllm.sif docker://rocm/vllm:rocm6.4.1_vllm_0.10.1_20250909
+```
+
+To serve a Llama3.3 model 
+```bash
+VLLM_USE_V1=0 apptainer exec ./vllm.sif  vllm serve '/lustre/orion/world-shared/stf218/junqi/llama/Llama-3.3-70B-Instruct' -tp 8
+```
+
+To run inference over the endpoint 
+```bash
+from openai import OpenAI
+
+openai_api_base = "http://localhost:8000/v1"
+client = OpenAI(
+    api_key="dummy",
+    base_url=openai_api_base,
+)
+completion = client.completions.create(model=f"/lustre/orion/world-shared/stf218/junqi/llama/Llama-3.3-70B-Instruct",
+                                  prompt="Tell me about Frontier supercomputer")
+print(completion.choices[0].text, flush=True)
+
+```
+
 ### PyTorch
 Frontier supports most LLM training and inference software libraries, and the deployment can be via either native installation (e.g., pip install) or containter (i.e., Apptainer). E.g., for rocm/6.4.2, PyTorch can be installed 
 ```bash
